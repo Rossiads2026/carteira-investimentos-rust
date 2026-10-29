@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Carteira de Investimentos</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-gray-800 p-8 rounded-xl shadow-2xl w-full max-w-md border border-gray-700">
+        <div class="text-center mb-6">
+            <h1 class="text-3xl font-bold tracking-tight text-emerald-400">Criar Conta</h1>
+            <p class="text-sm text-gray-400 mt-1">Comece a gerenciar seus investimentos</p>
+        </div>
+
+        <form action="/register" method="POST" class="space-y-4">
+            <div>
+                <label class="block text-sm font-medium text-gray-300 mb-1">E-mail</label>
+                <input type="email" name="email" required
+                    class="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-white placeholder-gray-500"
+                    placeholder="seu@email.com">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-300 mb-1">Senha</label>
+                <input type="password" name="password" required
+                    class="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-white placeholder-gray-500"
+                    placeholder="••••••••">
+            </div>
+            <button type="submit"
+                class="w-full py-3 bg-emerald-600 hover:bg-emerald-500 font-semibold rounded-lg transition-colors shadow-lg shadow-emerald-600/20 text-white">
+                Cadastrar
+            </button>
+        </form>
+
+        <p class="text-center text-sm text-gray-400 mt-6">
+            Já tem uma conta? <a href="/login" class="text-emerald-400 hover:underline">Faça login</a>
+        </p>
+    </div>
+</body>
+</html>
